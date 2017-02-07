@@ -15,6 +15,6 @@ object LR_for_minst_lab_Adagrad {
     updater.config.setLearningRatePolicy("Exponential")
     updater.config.setLrPolicyDecayRate(1)
     val test_model=new LR_for_minst_lab(n_epochs,updater)
-    test_model.main_deal()//不好
+    test_model.main_deal()//0.8957  最后的信息嫡0.54 迭代10几次计入0.8xx
   }
 }
