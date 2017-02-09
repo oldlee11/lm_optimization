@@ -8,6 +8,10 @@ import java.io.Serializable
   * 所有梯度下降的父类
   * 不同类型的梯度下降子类需要重构getGradient和update函数
   * 顶层函数为update(更新参数)
+  *
+  * 如果是map-reduce思想的话
+  * gen_ParamDiff用于map过程,对每个样本生成一个系数param变化的向量
+  * update是用于reduce过程，对一批样本产生的系数变化向量做平均，并更新最后的系数
   */
 class BaseUpdater extends Serializable{
 
